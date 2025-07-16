@@ -1,14 +1,12 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Main from './components/Main'
+import Navbar from "./components/Navbar";
+import CardsSection from "./components/CardsSection";
 
 const App = () => {
   return (
-    
-<>
-<Navbar/>
-<Main/></>
-
+    <>
+      <Navbar />
+      <CardsSection/>
+    </>
   );
 };
 

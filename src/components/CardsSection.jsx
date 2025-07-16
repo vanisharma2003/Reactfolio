@@ -1,0 +1,24 @@
+import Cards from "./Cards";
+import todo from "../assets/images/to-do.jpg";
+import weather from "../assets/images/weather-app-image.png"
+import news from "../assets/images/news-app.jpg"
+import chatbot from "../assets/images/chatbot.png"
+import purement from "../assets/images/purement.jpg"
+import joke from "../assets/images/joke-generator-image.jpg"
+function CardsSection() {
+    
+  return (
+    <>
+      <div className="cards-container">
+       <Cards title={"To-Do List"} imgSrc={todo} about={"A To-Do App is a simple productivity tool that allows users to add, update, delete, and manage daily tasks. It typically includes features like task completion, filtering, and persistent storage. Building a To-Do App with React strengthens core skills such as state management using useState, handling user inputs, conditional rendering, and working with lists using map(). It also helps in understanding component-based architecture and the importance of props and hooks."} github={"https://github.com/vanisharma2003/To-do-application"} live={"https://to-do-application-delta.vercel.app/"} more={"https://youtu.be/zQFzFsbRiB8?si=fOKw1Wv3Dloxse2V"}/>
+       <Cards title={"Weather Application"} imgSrc={weather} about={"A Weather Application displays real-time weather data for a selected location by fetching information from an external API. It usually includes features like temperature, humidity, wind speed, and weather conditions. Creating a Weather App in React enhances skills in working with APIs using fetch or axios, managing asynchronous data with useEffect, and updating UI dynamically based on state. It also improves understanding of component structure and responsive design."} github={"https://github.com/vanisharma2003/weather-app"} live={"https://weather-app-three-omega-14.vercel.app/"} more={"https://youtu.be/USQkgCHEAOM?si=Nxoox150ocmHjlk6"}/>
+       <Cards title={"Flash Feed"} imgSrc={news} about={"A News Application Flash Feed delivers the latest headlines and breaking news in a quick, scrollable format. It fetches real-time news data from external APIs and displays it in an engaging layout. Building this in React sharpens skills in API integration, dynamic routing with React Router, state and effect management, and rendering lists efficiently. It also improves UI/UX thinking for handling large volumes of data, optimizing performance, and implementing pagination to load content seamlessly."} github={"https://github.com/vanisharma2003/News-Application"} live={"https://news-application-plum.vercel.app/"} more={"https://youtu.be/waCkrUIlSTo?si=SEicR-AkeS24iD1M"}/>
+       <Cards title={"Quick Bot"} imgSrc={chatbot} about={"A Gemini-like Chatbot – QuickBot is an interactive AI-powered chatbot that responds to user queries in real time, simulating human-like conversations. It uses NLP APIs or custom logic to generate intelligent responses. Building QuickBot in React enhances skills in handling controlled components, managing complex state, integrating APIs, and creating real-time, dynamic UIs. It also strengthens your understanding of asynchronous operations, component communication, and user interaction flows."} github={"https://github.com/vanisharma2003/Gemini_Clone"} live={"https://gemini-clone-ten-omega.vercel.app"} more={"https://youtu.be/0yboGn8errU?si=FFpdKS1_ygeT7bv8"}/>
+       <Cards title={"Purement"} imgSrc={purement} about={"Purement – A One Page UI for a Restaurant is a visually appealing and responsive single-page website that showcases a restaurant's menu, ambiance, location, and contact details. It features smooth navigation, elegant layout, and engaging visuals to attract users. Building Purement in React sharpens skills in component structuring, responsive design with CSS frameworks like Tailwind or Bootstrap, and implementing smooth scrolling and navigation. It also enhances your ability to design user-friendly interfaces."} github={"https://github.com/vanisharma2003/PureMent"} live={"https://pure-ment-aishwaryas-projects-46d4710c.vercel.app/"} more={"https://youtu.be/o-4up1thdjs?si=XE44BaR3XWC6kGDv"}/>
+       <Cards title={"Random Joke Generator"} imgSrc={joke} about={"A Random Joke Generator is a fun and interactive app that fetches and displays a new joke each time a user clicks a button. It pulls jokes from an external API and presents them in a clean, engaging layout. Building this in React strengthens your skills in API integration, managing state and side effects with useState and useEffect, and handling user interactions. It’s a great project to practice conditional rendering, improve data-fetching logic, and add creative animations or transitions for enhanced user experience."} github={"https://github.com/vanisharma2003/random-joke"} live={"https://random-joke-generator-ruddy.vercel.app/?vercelToolbarCode=bCtX2_GofgVHyyy"} more={"https://youtu.be/BfNEg0KzPlY?si=EvQuAQJA5ihbmMhv"}/>
+      </div>
+    </>
+  );
+}
+
+export default CardsSection;

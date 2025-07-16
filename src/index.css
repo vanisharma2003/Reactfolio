@@ -6,3 +6,53 @@
 body{
   background-color:#22313f;
 }
+/* Navbar Classes */
+.navbar{
+    border: 2px solid black !important;
+    background-color: #8dc6ff !important;
+    min-width: 350px !important;
+}
+  .silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.heading{
+  font-size: xx-large;
+}
+  /* Cards Section Classes */
+  .cards-container{
+    /* display: flex;
+    gap: 20px;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap:40px;
+    padding: 20px;
+  }
+
+ @media (max-width: 1000px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+.cards-btn{
+  display: flex;
+  gap:10px
+}
+.card-images{
+  height: 250px;
+  padding: 10px;
+}
+.card{
+  min-width: 350px !important;
+}
